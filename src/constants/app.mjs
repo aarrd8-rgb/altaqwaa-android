@@ -8,7 +8,7 @@ export const NAV_ITEMS = [
   { path: '/home', label: 'الرئيسية', short: 'الرئيسية', icon: 'home', accent: '#7c9cff' },
   { path: '/quran', label: 'القرآن', short: 'المصحف', icon: 'book', accent: '#10b981' },
   { path: '/tafseer', label: 'التفسير الميسر', short: 'التفسير', icon: 'book-open', accent: '#2dd4bf' },
-  { path: '/adhkar', label: 'الأذكار', short: 'test', icon: 'hand', accent: '#d4af37' },
+  { path: '/adhkar', label: 'الأذكار', short: 'الأذكار', icon: 'hand', accent: '#d4af37' },
   { path: '/hisn', label: 'حصن المسلم', short: 'حصن المسلم', icon: 'shield', accent: '#60a5fa' },
   { path: '/history', label: 'الموسوعة التاريخية', short: 'التاريخ', icon: 'scroll', accent: '#b48cff' },
   { path: '/fatwas', label: 'فتاوى ابن باز', short: 'الفتاوى', icon: 'feather', accent: '#f59e0b' },
