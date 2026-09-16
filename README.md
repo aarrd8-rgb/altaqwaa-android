@@ -140,3 +140,5 @@ npm run keystore   # يولد مفتاح keystore + build.json
 [🌐 المتجر](https://play.google.com/store/apps/details?id=com.rn0x.altaqwaa) · [🌐 الموقع](https://rn0x.github.io/altaqwaa-android/) · [🔒 الخصوصية](https://rn0x.github.io/altaqwaa-android/privacy.html) · [🐙 GitHub](https://github.com/rn0x/altaqwaa-android) · [⬇️ Releases](https://github.com/rn0x/altaqwaa-android/releases)
 
 </div>
+
+Test de modification par aard8-rgb - Apprentissage GitHub
