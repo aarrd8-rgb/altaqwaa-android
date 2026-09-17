@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AdhkarCategoryGrid } from '../components/adhkar/AdhkarCategoryGrid.jsx'
 import { AdhkarStats } from '../components/adhkar/AdhkarStats.jsx'
-
+import { t } from '../locales/i18n.js';
 export default function AdhkarScreen() {
   const [tab, setTab] = useState('adhkar')
   const navigate = useNavigate()
@@ -10,7 +10,7 @@ export default function AdhkarScreen() {
   return (
     <section className="screen adhkar">
       <div className="adhkar-hero">
-        <p>وردك اليومي من أذكار الصباح والمساء والنوم والطعام والتسبيح</p>
+        <p>{t('dailyPortion')}</p>
       </div>
 
       <div className="adhkar-tabs" role="tablist">
@@ -18,13 +18,13 @@ export default function AdhkarScreen() {
           className={'adhkar-tab' + (tab === 'adhkar' ? ' adhkar-tab--active' : '')}
           onClick={() => setTab('adhkar')}
         >
-          الأقسام
+          {t('sections')}
         </button>
         <button
           className={'adhkar-tab' + (tab === 'stats' ? ' adhkar-tab--active' : '')}
           onClick={() => setTab('stats')}
         >
-          الإحصائية
+          {t('stats')}
         </button>
       </div>
 
