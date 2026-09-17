@@ -2,13 +2,22 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AdhkarCategoryGrid } from '../components/adhkar/AdhkarCategoryGrid.jsx'
 import { AdhkarStats } from '../components/adhkar/AdhkarStats.jsx'
-import { t } from '../locales/i18n.js';
+import { t, setLanguage, getLanguage } from '../locales/i18n.js';
 export default function AdhkarScreen() {
   const [tab, setTab] = useState('adhkar')
   const navigate = useNavigate()
+  const [lang, setLang] = useState(getLanguage())
 
+  const toggleLanguage = () => {
+    const next = lang === 'fr' ? 'ar' : 'fr'
+    setLanguage(next)
+    setLang(next)
+  }
   return (
     <section className="screen adhkar">
+            <button onClick={toggleLanguage}>
+        {lang === 'fr' ? 'العربية' : 'Français'}
+      </button>
       <div className="adhkar-hero">
         <p>{t('dailyPortion')}</p>
       </div>
